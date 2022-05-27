@@ -1,0 +1,100 @@
+.AboutMeSectionContainer{
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+}
+
+.AboutMeTopContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.AboutMeHeader{
+    font-size: 150px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.AboutMeLeftContainer{
+    width: 50%;
+    justify-content: center;
+    align-self: center;
+    text-align: justify-all;
+}
+
+.AboutMeTextWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+
+.AboutMeParagraphHeader{
+    margin-bottom: 10px;
+    align-self: flex-start;
+    font-size: 60px;
+}
+
+
+.AboutMeParagraph{
+    margin-bottom: 10px;
+}
+
+.AboutMeRightContainer{
+    width: 50%;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.ButtonHolder{
+    width: 750px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 1600px) {
+    .AboutMeSectionContainer{
+        height: fit-content;
+    }
+    .AboutMeHeader{
+        font-size: 135px;
+    }
+    .AboutMeParagraphHeader{
+        font-size: 4vh;
+    }
+    .AboutMeLeftContainer, .AboutMeRightContainer{
+        width: 100%;
+    }
+    .AboutMeLeftContainer{
+        margin-top: 35px;
+    }
+
+    .AboutMeTextWrapper{
+        text-align: justify;
+    }
+
+
+
+    .AboutMeTopContainer{
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 896px) {
+    .AboutMeTextWrapper{
+        padding: 0;
+    }
+}

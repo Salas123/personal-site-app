@@ -1,0 +1,43 @@
+.buttonIcon{
+    width: 100%;
+    height: 30px;
+}
+
+.buttonContainer{
+    border: 2px solid #faf8f8;
+    background-color: coral;
+    display: flex;
+    flex-direction: row;
+    width: 170px;
+    height: 50px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.buttonContainer:hover{
+    background-color: #7bacc7;
+}
+
+
+.buttonIconContainer{
+    height: 100%;
+    width: 25%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttonTextContainer {
+    height: inherit;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonText{
+    font-size: 15px;
+    margin:auto;
+}
+

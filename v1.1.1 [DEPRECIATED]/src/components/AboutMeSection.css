@@ -1,0 +1,79 @@
+@keyframes slideInFromBelow {
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+
+.about-me-container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    width: 100vw;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+}
+
+.about-me-header{
+    color: white;
+    font-size: 100px;
+    width: 100%;
+    align-self: center;
+    animation: 1s ease-out 0s 1 slideInFromBelow;
+}
+
+.about-me-container> .container-divider{
+    border-bottom: white solid;
+    width: 20%;
+    align-self: center;
+    margin-top: 15px;
+}
+
+.about-me-text-container{
+    color: white;
+    font-size: 25px;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    animation: 1s ease-out 0s 1 slideInFromBelow;
+}
+
+
+
+@media screen and (max-width: 1200px){
+
+    .about-me-header{
+        font-size: 10vw;
+    }
+}
+
+
+@media screen and (max-width: 960px)
+{
+    .about-me-header{
+        font-size: 10vw;
+    }
+
+    .about-me-text-container{
+        font-size: 4vw;
+    }
+
+    .about-me-container> .container-divider{
+        width: 30%;
+    }
+
+    .about-me-text-container{
+        width: 100%;
+    }
+}

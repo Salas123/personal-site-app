@@ -1,0 +1,52 @@
+.CardContainer{
+    height: auto;
+    width: 100%;
+    border-radius: inherit;
+    position: relative;
+}
+
+.imageCardContainer{
+    border-radius: inherit;
+    content-visibility: auto;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+.cardOverlay{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    background: rgb(138,147,147);
+    background: radial-gradient(circle, rgb(206, 222, 245) 18%, rgb(174, 126, 233) 100%);
+    z-index: 1;
+    position: absolute;
+    transition: 0.5s ease;
+    justify-content: center;
+}
+
+.cardOverlayTextWrapper{
+    font-family: 'Righteous', cursive;
+    position: absolute;
+    color: #0f0f0f;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 3;
+    top: 50%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.CardContainer:hover .cardOverlay{
+    opacity: 0.5;
+}
+
+.CardContainer:hover .cardOverlayTextWrapper{
+    opacity: 1.0;
+}

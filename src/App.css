@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    position: inherit;
+    width: fit-content;
+    background-color: #1b1464;
+}
+
+
+p{
+    font-family: 'Righteous', cursive;
+    color: #faf8f8;
+    padding: 0;
+}
+
+
+h1{
+
+    font-size: 140px;
+    font-family: 'Righteous', cursive;
+    -webkit-text-stroke-color: #0d0d0c;
+    -webkit-text-fill-color: #faf8f8;
+    -webkit-text-stroke-width: 1px;
+}
+
+
+h2{
+    font-family: 'Righteous', cursive;
+    color: #6fa4d8;
+}
+
+img{
+    height: inherit;
+    width: inherit;
+}
+
+
+

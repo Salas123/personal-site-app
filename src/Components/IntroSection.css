@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Slab:wght@700&display=swap');
+
+.IntroSectionContainer{
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    height: 800px;
+    justify-content: center;
+    width: 100%;
+}
+
+.personParaDescriptor{
+    font-size: 2vh;
+}
+
+.topContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+}
+.bottomContainer{
+    height: 10%;
+    width: 25%;
+    align-self: center;
+}
+
+.leftContainer{
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.fullNameHeader{
+    font-size: 7vw;
+    font-family: 'Righteous', cursive;
+    color: #faf8f8;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.rightContainer{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.profilePic{
+    height: 45%;
+    width: 45%;
+}
+
+
+@media screen and (max-width: 1600px) {
+    .IntroSectionContainer{
+        height: fit-content;
+    }
+    .topContainer{
+        flex-direction: column;
+    }
+    .leftContainer{
+        width: 100%;
+    }
+    .rightContainer{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 896px) {
+
+    .fullNameHeader{
+        font-size: 100px;
+    }
+
+    .rightContainer{
+        margin-bottom: 50px;
+    }
+}
+
+
+

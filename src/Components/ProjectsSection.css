@@ -1,0 +1,66 @@
+.ProjectsSectionContainer{
+    background-color: transparent;
+    height: fit-content;
+}
+
+.ProjectsHeader{
+    margin-left: 25px;
+}
+
+.ProjectsBoxContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.ProjectsListWrapper{
+    content-visibility: initial;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    list-style-type: none;
+    margin: auto;
+}
+
+.ProjectsSubHeader{
+    color: #ffffff;
+    margin-left: 25px;
+    font-size: 50px;
+}
+
+.ProjectsBottomBoxContainer{
+    height: 50px;
+}
+
+
+.ProjectsElement{
+    height: auto;
+    width: 500px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+@media screen and (max-width: 2126px) {
+    .ProjectsListWrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1605px) {
+    .ProjectsListWrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1036px) {
+    .ProjectsListWrapper{
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        justify-items: center;
+    }
+    .ProjectsTopBoxContainer{
+        text-align: center;
+    }
+    .ProjectsHeader{
+        margin-left: auto;
+    }
+}
